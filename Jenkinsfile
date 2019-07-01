@@ -6,7 +6,7 @@ pipeline {
           echo 'Hi, this is Prasath from cts'
         }
       }
-      stage (2){
+      stage ('two'){
         steps {
           inputs('Do you want to proceed?')
         }
@@ -16,6 +16,9 @@ pipeline {
           not {
             branch "master"
           }
+        }
+        steps {
+          echo "Hello"
         }
       }
     }
