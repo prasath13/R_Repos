@@ -19,10 +19,7 @@ pipeline {
                                                       steps { echo "running the unit test..." }
                                             }
                                             stage ('Integration test') {
-                                                      agent {
-                                                            steps { echo "running the integration test..." }
-                                                      }
-                                                   
+                                                      steps { echo "running the integration test..." }
                                             }
                                   }
                              }
