@@ -1,0 +1,16 @@
+node {
+    for (int i=0;i<2;i++) 
+    {
+        stage "Stage #" +i
+        print 'Hello, World !'
+        if (i==0)
+        {
+            git "https://github.com/prasath13/Test_repo.git"
+            echo "Running on Stage #0"
+        }
+        else
+        {
+            echo "Running on Stage #1"
+        }
+    }
+}
